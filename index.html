@@ -1,131 +1,273 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
-        
-        
-        <link rel="shortcut icon" href="img/favicon.ico">
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.1">
+    
+    
+      
         <title>Amplify Demo Workshop</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.1c75ef36.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
-
-    <body class="homepage">
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href=".">Amplify Demo Workshop</a>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#leap-day-intro-to-aws-amplify" class="nav-link">Leap Day: Intro to AWS Amplify</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#what-we-will-build" class="nav-link">What we will build?</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#prerequisites" class="nav-link">Prerequisites</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#installation" class="nav-link">Installation</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#note-the-output-of-these-environment-variables-name" class="nav-link">Note the output of these environment variables name</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#note-the-output-of-these-environment-variables-name_1" class="nav-link">Note the output of these environment variables name</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#known-issue" class="nav-link">Known Issue</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link"></a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link"></a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link"></a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link"></a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-        </ul>
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#leap-day-intro-to-aws-amplify" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
 
-<h1 id="leap-day-intro-to-aws-amplify">Leap Day: Intro to AWS Amplify</h1>
-<!-- ## Background & Challenges
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Amplify Demo Workshop" class="md-header__button md-logo" aria-label="Amplify Demo Workshop" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
 
-* As non-developer background, I have been struggle to catch up the development skills. I’ll try to share what I have done to learn the development skill. Will try to make sure the session will use common term and avoid developer specific “lingo”/“terms” that easy to be understand by non-developer people. 
-* Personal opinion: 
-    * I learn faster by see the working example & working backward to understand the core concepts.
-    * I learn faster by developing real application with real life challenge
-    * I don’t know what to do with single piece of service. If I only learn AWS DynamoDB, that’s will be boring topic without any reference to how to use it in real life
-* Scrappy way to learn the coding/programming
-* Questions that come up :
-    * How can I create multiple Lambda to serve API Gateway?
-    * Which programming language?
-    * Where to start?
-    * RDS or DynamoDB? Transition in design philosophy
-    * What does that PK & SK in DynamoDB used for? 
-    * How to manage the authentication?
-    * What does CI/CD looks like in real life?
-    * Full stack or Frontend/Backend ?
-* *To disconfirm my belief that potential other SA have the same challenge*
-* Disclaimer : 
-    * Might not suitable for other people with different learning style
-    * I’m not the expert on Amplify, nor in other services/framework used in this session. I’m open for any suggestion/advice for future learning path journey -->
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Amplify Demo Workshop
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
 
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Amplify Demo Workshop" class="md-nav__button md-logo" aria-label="Amplify Demo Workshop" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Amplify Demo Workshop
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Home
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-we-will-build" class="md-nav__link">
+    What we will build?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-issue" class="md-nav__link">
+    Known Issue
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="leap-day-intro-to-aws-amplify">Leap Day: Intro to AWS Amplify</h1>
 <h2 id="what-we-will-build">What we will build?</h2>
 <p>We will build the application that looks like the following diagram:</p>
 <p><img alt="" src="diagram-v01.png" /></p>
@@ -159,68 +301,58 @@
 </li>
 <li>
 <p>Validate the following items in your Cloud9</p>
-<p><code>$ npm --version 
+<div class="highlight"><pre><span></span><code>$ npm --version 
 $ npx --version
 $ yarn --version
 $ python --version
 $ pip --version
 $ pipenv --version
-$ amplify --version</code>
-For you that don't familiar with command above: 
-- <code>npm</code> short for node package manager is a tool to install Javascript package.
-- <code>npx</code> is tool to execute Javascript package.
-- <code>yarn</code> is similar to npm. We will use yarn for the rest of the workshop, feel free to use npm if you more familiar with it.
-- <code>pip</code> is Python package manager to install required modules. 
-- <code>pipenv</code> is Python tool to create isolated environment &amp; manage required packages inside it. We will use this when creating Lambda function.</p>
+$ amplify --version
+</code></pre></div>
+<p>For you that don't familiar with command above: </p>
+<ul>
+<li><code>npm</code> short for node package manager is a tool to install Javascript package.</li>
+<li><code>npx</code> is tool to execute Javascript package.</li>
+<li><code>yarn</code> is similar to npm. We will use yarn for the rest of the workshop, feel free to use npm if you more familiar with it.</li>
+<li><code>pip</code> is Python package manager to install required modules. </li>
+<li><code>pipenv</code> is Python tool to create isolated environment &amp; manage required packages inside it. We will use this when creating Lambda function.</li>
+</ul>
 </li>
 <li>
 <p>On default Cloud9 installation you should have <code>npm</code>, <code>npx</code>, <code>python</code>, and <code>pip</code> (at the time of this writting, Amazon Linux 2 use Python 3.7.9 as default). And it is ok if you find error for <code>yarn</code>, <code>pipenv</code>, and <code>amplify</code>. On the next few steps we will configure those items.</p>
 </li>
 <li>
 <p>You can skip this step if you already have <code>yarn</code> on your environment. Install YARN package manager</p>
-<p><code>$ npm install yarn -g
-$ yarn —version</code></p>
+<div class="highlight"><pre><span></span><code>$ npm install yarn -g
+$ yarn —version
+</code></pre></div>
 </li>
 <li>
 <p>At this time of this writting, Amplify requires Python 3.8 when we use Python for Lambda as backend. On Amazon Linux 2, Python 3.8 is available in Amazon Linux Extra. Run the following command to install Python 3.8.</p>
-<p><code>$ sudo yum update -y
+<div class="highlight"><pre><span></span><code>$ sudo yum update -y
 $ amazon-linux-extras list | grep -i python
 $ sudo amazon-linux-extras install python3.8 -y
 $ sudo alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 1
 $ sudo alternatives --config python3
-$ python3 --version</code></p>
+$ python3 --version
+</code></pre></div>
 </li>
-</ol>
-<!-- Since Python 3.8 is not yet available in Amazon Linux repo, we need to install from source code. Follow the steps below to download and compile Python 3.8:
-
-    ```
-    $ sudo yum install gcc openssl-devel bzip2-devel libffi-devel 
-    $ cd /opt
-    $ sudo wget https://www.python.org/ftp/python/3.8.6/Python-3.8.6.tgz
-    $ sudo tar xzf Python-3.8.6.tgz
-    $ cd Python-3.8.6
-    $ sudo ./configure --enable-optimizations
-    $ sudo make altinstall
-    $ sudo rm -f /opt/Python-3.8.6.tgz
-    $ sudo alternatives --install /usr/bin/python python /usr/local/bin/python3.8 1
-    $ sudo alternatives --config python
-    $ python --version
-    ``` -->
-
-<ol>
 <li>
 <p>We need to install <code>pipenv</code> to create package dependencies list (<code>Pipfile</code>) for Lambda Python.</p>
-<p><code>$ python3 -m pip install --user pipenv</code></p>
+<div class="highlight"><pre><span></span><code>$ python3 -m pip install --user pipenv
+</code></pre></div>
 </li>
 <li>
 <p>Last but not least, we need to install Amplify CLI using the following command:</p>
-<p><code>$ npm install -g @aws-amplify/cli</code></p>
+<div class="highlight"><pre><span></span><code>$ npm install -g @aws-amplify/cli
+</code></pre></div>
 <p>We will use Amplify CLI to create, configure and provision all AWS resources.</p>
 </li>
 <li>
 <p>Download the file below and extract:</p>
-<p><code>$ wget https://staticweb.awsbuilder.xyz/leapdemo-introamplify-workshop.tar.gz
-$ tar zxvf leapdemo-introamplify-workshop.tar.gz</code></p>
+<div class="highlight"><pre><span></span><code>$ wget https://staticweb.awsbuilder.xyz/leapdemo-introamplify-workshop.tar.gz
+$ tar zxvf leapdemo-introamplify-workshop.tar.gz
+</code></pre></div>
 <p>You should see 4 files below, we will use those files later in the installation steps:</p>
 <ul>
 <li>groceryTrackingLambda.tar.gz</li>
@@ -234,14 +366,16 @@ $ tar zxvf leapdemo-introamplify-workshop.tar.gz</code></p>
 <ol>
 <li>
 <p>First we will create a basic React App. We create a folder as project folder and run <code>npx create-react-app</code> as shown below:</p>
-<p><code>$ mkdir leapdemo
+<div class="highlight"><pre><span></span><code>$ mkdir leapdemo
 $ cd leapdemo
-$ npx create-react-app .</code></p>
+$ npx create-react-app .
+</code></pre></div>
 <p>On the example above, we use <code>leapdemo</code> folder as top level project. You can use different project folder name.</p>
 </li>
 <li>
 <p>We can test basic React website locally using the following command:</p>
-<p><code>$ yarn start</code></p>
+<div class="highlight"><pre><span></span><code>$ yarn start
+</code></pre></div>
 <p>By default <code>yarn</code> will create local web server using port 8080.</p>
 </li>
 <li>
@@ -251,7 +385,7 @@ $ npx create-react-app .</code></p>
 </li>
 <li>
 <p>Lets inspect the working directory, you should have the following contents :</p>
-<p><code>$ ls -trl
+<div class="highlight"><pre><span></span><code>$ ls -trl
 total 548
 drwxrwxr-x    2 ec2-user ec2-user   4096 Dec  4 15:20 src
 -rw-r--r--    1 ec2-user ec2-user   3362 Dec  4 15:20 README.md
@@ -259,7 +393,8 @@ drwxrwxr-x    2 ec2-user ec2-user   4096 Dec  4 15:20 public
 -rw-rw-r--    1 ec2-user ec2-user    812 Dec  4 15:20 package.json
 -rw-rw-r--    1 ec2-user ec2-user 503731 Dec  4 15:20 yarn.lock
 drwxrwxr-x 1048 ec2-user ec2-user  36864 Dec  4 15:22 node_modules
-$</code></p>
+$ 
+</code></pre></div>
 <ul>
 <li><code>src</code> folder is the placeholder for our React source codes.</li>
 <li><code>package.json</code> contains all Javascript package dependencies and some command to build &amp; run this React application.</li>
@@ -269,13 +404,13 @@ $</code></p>
 </li>
 <li>
 <p>Now lets setup Amplify by initialize the environment using command below (still on top level project directory):</p>
-<p><code>$ amplify init</code></p>
+<div class="highlight"><pre><span></span><code>$ amplify init
+</code></pre></div>
 <p>Amplify will as you to provide some information below : </p>
-<p>```
-? Enter a name for the project    # Your project name (e.g. leapdemo)
+<div class="highlight"><pre><span></span><code>? Enter a name for the project    # Your project name (e.g. leapdemo)
 ? Enter a name for the environment    # Your environment type (e.g. dev /prod)
 ? Choose your default editor:    # Your prefered editor (e.g. Visual Code Editor, this is optional)
-? Choose the type of app that you're building    # Select javascript
+? Choose the type of app that you&#39;re building    # Select javascript
 Please tell us about your project
 ? What javascript framework are you using    # Select react
 ? Source Directory Path:  src    # leave default value
@@ -285,28 +420,34 @@ Please tell us about your project
 Using default provider  awscloudformation    # leave default value
 AWS access credentials can not be found.  #
 ? Setup new user Yes    # Select Yes if you want to create new IAM user
-Follow these steps to set up access to your AWS account:</p>
-<p>Sign in to your AWS administrator account:
+Follow these steps to set up access to your AWS account:
+
+Sign in to your AWS administrator account:
 https://console.aws.amazon.com/
-Press Enter to continue</p>
-<p>Specify the AWS Region
+Press Enter to continue
+
+Specify the AWS Region
 ? region:    # Specify AWS region
 Specify the username of the new IAM user:
 ? user name:     # Specify IAM User
 Complete the user creation using the AWS console
 https://console.aws.amazon.com/iam/home?region=ap-southeast-1#/users$new?step=final&amp;accessKey&amp;userNames=amplify-leapdemo&amp;permissionType=policies&amp;policies=arn:aws:iam::aws:policy%2FAdministratorAccess
-Press Enter to continue</p>
-<p>Enter the access key of the newly created user:
-? accessKeyId:  <strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em>*    # Input your access key id
-? secretAccessKey:  </strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong>***    # Input your secret access key
+Press Enter to continue
+
+Enter the access key of the newly created user:
+? accessKeyId:  ********************    # Input your access key id
+? secretAccessKey:  ****************************************    # Input your secret access key
 This would update/create the AWS Profile in your local machine
-? Profile Name:    # leave default or input AWS profile name if you have existing AWS profile in your Cloud9</p>
-<p>Successfully set up the new user.</p>
-<p>For more information on AWS Profiles, see:
-https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html</p>
-<p>? Do you want to use an AWS profile?    # Select Yes to use profile
+? Profile Name:    # leave default or input AWS profile name if you have existing AWS profile in your Cloud9
+
+Successfully set up the new user.
+
+For more information on AWS Profiles, see:
+https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html
+
+? Do you want to use an AWS profile?    # Select Yes to use profile
 ? Please choose the profile you want to use    # Select AWS Profile name
-```</p>
+</code></pre></div>
 <p>After all those questionaire, Amplify will start to initialize a new Amplify environment in the backend.</p>
 <p>Please note that IAM user creation is optional step, you can rather use existing IAM and/or existing AWS profile. Default user created from this console will be using <code>AdministratorAccess</code> policy.</p>
 </li>
@@ -315,47 +456,58 @@ https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html</p>
 </li>
 <li>
 <p>Next we will create Cognito user pool for handling our application user authentication. Run the following command to start adding &amp; configuring Cognito:</p>
-<p><code>$ amplify add auth</code></p>
+<div class="highlight"><pre><span></span><code>$ amplify add auth
+</code></pre></div>
 <p>By default Amplify will use Cognito as provider as mentioned in the initial message:</p>
-<p>```
-Using service: Cognito, provided by: awscloudformation</p>
-<p>The current configured provider is Amazon Cognito. 
-```</p>
+<div class="highlight"><pre><span></span><code>Using service: Cognito, provided by: awscloudformation
+
+The current configured provider is Amazon Cognito. 
+</code></pre></div>
 <p>Amplify will ask few configuration below:</p>
-<p><code>Do you want to use the default authentication and security configuration?    # Choose "Default configuration"
-How do you want users to be able to sign in?    # Choose "Username"
-Do you want to configure advanced settings?    # Choose "No, I am done."</code></p>
-<p>Notes :
-1. That you can choose different setup if you already comfortable with Cognito settings.
-2. To navigate through Amplify resource creation wizard, you can use :
-    - up/down arrow buttons
-    - 'space' button to select 1 option
-    - 'a' button to select all options
-    - 'i' button to invert the selection
-    - 'Enter' button to continue</p>
+<div class="highlight"><pre><span></span><code>Do you want to use the default authentication and security configuration?    # Choose &quot;Default configuration&quot;
+How do you want users to be able to sign in?    # Choose &quot;Username&quot;
+Do you want to configure advanced settings?    # Choose &quot;No, I am done.&quot;
+</code></pre></div>
+<p>Notes :</p>
+<ol>
+<li>That you can choose different setup if you already comfortable with Cognito settings.</li>
+<li>To navigate through Amplify resource creation wizard, you can use :<ul>
+<li>up/down arrow buttons</li>
+<li>'space' button to select 1 option</li>
+<li>'a' button to select all options</li>
+<li>'i' button to invert the selection</li>
+<li>'Enter' button to continue</li>
+</ul>
+</li>
+</ol>
 </li>
 <li>
 <p>Next we need to create S3 bucket as the storage media using the following command: </p>
-<p><code>amplify add storage</code></p>
+<div class="highlight"><pre><span></span><code>amplify add storage
+</code></pre></div>
 <p>Amplify will ask few configuration below:</p>
-<p><code>? Please select from one of the below mentioned services:    # Select "Content (Images, audio, video, etc.)"
+<div class="highlight"><pre><span></span><code>? Please select from one of the below mentioned services:    # Select &quot;Content (Images, audio, video, etc.)&quot;
 ? Please provide a friendly name for your resource that will be used to label this category in the project:    # Specify resource name, e.g. grocerybucket
 ? Please provide bucket name:    # Specify S3 bucket name (must be unique), e.g. grocerybucket123
-? Who should have access:    # Select "Auth users only"
-? What kind of access do you want for Authenticated users?    # Select "create/update, read, delete"
-? Do you want to add a Lambda Trigger for your S3 Bucket?    # Select "No"</code></p>
+? Who should have access:    # Select &quot;Auth users only&quot;
+? What kind of access do you want for Authenticated users?    # Select &quot;create/update, read, delete&quot;
+? Do you want to add a Lambda Trigger for your S3 Bucket?    # Select &quot;No&quot;
+</code></pre></div>
 </li>
 <li>
 <p>Next we need to prepare DynamoDB table. Please note that for this step you must follow the instruction below closely (using the same column name, column type, as well as Primary/Sort Key setup) since the Lambda function already set using those values.</p>
-<p>```
-$ amplify add storage
-? Please select from one of the below mentioned services:    # Select "NoSQL Database"</p>
-<p>Welcome to the NoSQL DynamoDB database wizard
-This wizard asks you a series of questions to help determine how to set up your NoSQL database table.</p>
-<p>? Please provide a friendly name for your resource that will be used to label this category in the project:    # Specify Amplify resource name, e.g. "groceryTable"
-? Please provide table name:    # Specify Amplify resource name, e.g. "groceryTable"</p>
-<p>You can now add columns to the table.</p>
-<p>? What would you like to name this column: PK
+<div class="highlight"><pre><span></span><code>$ amplify add storage
+? Please select from one of the below mentioned services:    # Select &quot;NoSQL Database&quot;
+
+Welcome to the NoSQL DynamoDB database wizard
+This wizard asks you a series of questions to help determine how to set up your NoSQL database table.
+
+? Please provide a friendly name for your resource that will be used to label this category in the project:    # Specify Amplify resource name, e.g. &quot;groceryTable&quot;
+? Please provide table name:    # Specify Amplify resource name, e.g. &quot;groceryTable&quot;
+
+You can now add columns to the table.
+
+? What would you like to name this column: PK
 ? Please choose the data type: string
 ? Would you like to add another column? Yes
 ? What would you like to name this column: SK
@@ -381,76 +533,83 @@ This wizard asks you a series of questions to help determine how to set up your 
 ? Would you like to add another column? Yes
 ? What would you like to name this column: grocery_qty
 ? Please choose the data type: string
-? Would you like to add another column? No</p>
-<p>? Please choose partition key for the table: PK
+? Would you like to add another column? No
+
+? Please choose partition key for the table: PK
 ? Do you want to add a sort key to your table? Yes
-? Please choose sort key for the table: SK</p>
-<p>? Do you want to add global secondary indexes to your table? No
+? Please choose sort key for the table: SK
+
+? Do you want to add global secondary indexes to your table? No
 ? Do you want to add a Lambda Trigger for your Table? No
 Successfully added resource groceryTable locally 
-```</p>
+</code></pre></div>
 </li>
 <li>
 <p>The next step is to create API Gateway (REST)  with Lambda functions as backend:</p>
-<p>```
-$ amplify add api
-? Please select from one of the below mentioned services:    # Select "REST"
-? Provide a friendly name for your resource to be used as a label for this category in the project:    # Specify API name, e.g. "groceryTrackingAPI"
-? Provide a path (e.g., /book/{isbn}):    # Specify 1st path name for CRUD operation, e.g. "/grocery"
-? Choose a Lambda source    # Select "Create a new Lambda function"
-? Provide an AWS Lambda function name:    # Specify Lambda name, e.g. "groceryTrackingLambda"
-? Choose the runtime that you want to use:    # Select "Python"
-? Do you want to configure advanced settings?    # Select "Yes"
-? Do you want to access other resources in this project from your Lambda function?    # Select "Yes"
-? Select the category    # Select "storage"
-? Storage has 2 resources in this project. Select the one you would like your Lambda to access    # Select both DynamoDB table &amp; S3 Bucket name, e.g. "groceryBucket, groceryTable"
-? Select the operations you want to permit for groceryBucket    # Select "create, read, update, delete"
-? Select the operations you want to permit for groceryTable    # Select "create, read, update, delete"</p>
-<h1 id="note-the-output-of-these-environment-variables-name">Note the output of these environment variables name</h1>
-<p>You can access the following resource attributes as environment variables from your Lambda function
+<div class="highlight"><pre><span></span><code>$ amplify add api
+? Please select from one of the below mentioned services:    # Select &quot;REST&quot;
+? Provide a friendly name for your resource to be used as a label for this category in the project:    # Specify API name, e.g. &quot;groceryTrackingAPI&quot;
+? Provide a path (e.g., /book/{isbn}):    # Specify 1st path name for CRUD operation, e.g. &quot;/grocery&quot;
+? Choose a Lambda source    # Select &quot;Create a new Lambda function&quot;
+? Provide an AWS Lambda function name:    # Specify Lambda name, e.g. &quot;groceryTrackingLambda&quot;
+? Choose the runtime that you want to use:    # Select &quot;Python&quot;
+? Do you want to configure advanced settings?    # Select &quot;Yes&quot;
+? Do you want to access other resources in this project from your Lambda function?    # Select &quot;Yes&quot;
+? Select the category    # Select &quot;storage&quot;
+? Storage has 2 resources in this project. Select the one you would like your Lambda to access    # Select both DynamoDB table &amp; S3 Bucket name, e.g. &quot;groceryBucket, groceryTable&quot;
+? Select the operations you want to permit for groceryBucket    # Select &quot;create, read, update, delete&quot;
+? Select the operations you want to permit for groceryTable    # Select &quot;create, read, update, delete&quot;
+
+# Note the output of these environment variables name
+You can access the following resource attributes as environment variables from your Lambda function
         ENV
         REGION
         STORAGE_GROCERYBUCKET_BUCKETNAME
         STORAGE_GROCERYTABLE_ARN
-        STORAGE_GROCERYTABLE_NAME</p>
-<p>? Do you want to invoke this function on a recurring schedule?    # Select "No"
-? Do you want to configure Lambda layers for this function?    # Select "No"
-? Do you want to edit the local lambda function now?    # Select "No"
-? Restrict API access    # Select "Yes"
-? Who should have access?    # Select "Authenticated users only"
-? What kind of access do you want for Authenticated users?    # Select "create, read, update, delete"
-? Do you want to add another path?    # Select "Yes"</p>
-<p>? Provide a path (e.g., /book/{isbn}):    # Specify 1st path name for reporting function, e.g. "/report"
-? Choose a Lambda source    # Select "Create a new Lambda function"
-? Provide an AWS Lambda function name:    # Specify Lambda name, e.g. "groceryTrackingReportLambda"
-? Choose the runtime that you want to use:    # Select "Python"
-? Do you want to configure advanced settings?    # Select "Yes"
-? Do you want to access other resources in this project from your Lambda function?    # Select "Yes"
-? Select the category    # Select "storage"
-? Storage has 2 resources in this project. Select the one you would like your Lambda to access    # Select DynamoDB table &amp; S3 Bucket name, e.g. "groceryBucket, groceryTable"
-? Select the operations you want to permit for groceryBucket    # Select "create, read, update, delete"
-? Select the operations you want to permit for groceryTable    # Select "create, read, update, delete"</p>
-<h1 id="note-the-output-of-these-environment-variables-name_1">Note the output of these environment variables name</h1>
-<p>You can access the following resource attributes as environment variables from your Lambda function
+        STORAGE_GROCERYTABLE_NAME
+
+? Do you want to invoke this function on a recurring schedule?    # Select &quot;No&quot;
+? Do you want to configure Lambda layers for this function?    # Select &quot;No&quot;
+? Do you want to edit the local lambda function now?    # Select &quot;No&quot;
+? Restrict API access    # Select &quot;Yes&quot;
+? Who should have access?    # Select &quot;Authenticated users only&quot;
+? What kind of access do you want for Authenticated users?    # Select &quot;create, read, update, delete&quot;
+? Do you want to add another path?    # Select &quot;Yes&quot;
+
+? Provide a path (e.g., /book/{isbn}):    # Specify 1st path name for reporting function, e.g. &quot;/report&quot;
+? Choose a Lambda source    # Select &quot;Create a new Lambda function&quot;
+? Provide an AWS Lambda function name:    # Specify Lambda name, e.g. &quot;groceryTrackingReportLambda&quot;
+? Choose the runtime that you want to use:    # Select &quot;Python&quot;
+? Do you want to configure advanced settings?    # Select &quot;Yes&quot;
+? Do you want to access other resources in this project from your Lambda function?    # Select &quot;Yes&quot;
+? Select the category    # Select &quot;storage&quot;
+? Storage has 2 resources in this project. Select the one you would like your Lambda to access    # Select DynamoDB table &amp; S3 Bucket name, e.g. &quot;groceryBucket, groceryTable&quot;
+? Select the operations you want to permit for groceryBucket    # Select &quot;create, read, update, delete&quot;
+? Select the operations you want to permit for groceryTable    # Select &quot;create, read, update, delete&quot;
+
+# Note the output of these environment variables name
+You can access the following resource attributes as environment variables from your Lambda function
         ENV
         REGION
         STORAGE_GROCERYBUCKET_BUCKETNAME
         STORAGE_GROCERYTABLE_ARN
-        STORAGE_GROCERYTABLE_NAME</p>
-<p>? Do you want to invoke this function on a recurring schedule?    # Select "No"
-? Do you want to configure Lambda layers for this function?    # Select "No"
-? Do you want to edit the local lambda function now?    # Select "No"
-? Restrict API access    # Select "Yes"
-? Who should have access?    # Select "Authenticated users only"
-? What kind of access do you want for Authenticated users?    # Select "create, read, update, delete"
-? Do you want to add another path?    # Select "No" 
-```</p>
+        STORAGE_GROCERYTABLE_NAME
+
+? Do you want to invoke this function on a recurring schedule?    # Select &quot;No&quot;
+? Do you want to configure Lambda layers for this function?    # Select &quot;No&quot;
+? Do you want to edit the local lambda function now?    # Select &quot;No&quot;
+? Restrict API access    # Select &quot;Yes&quot;
+? Who should have access?    # Select &quot;Authenticated users only&quot;
+? What kind of access do you want for Authenticated users?    # Select &quot;create, read, update, delete&quot;
+? Do you want to add another path?    # Select &quot;No&quot; 
+</code></pre></div>
 </li>
 <li>
 <p>We need to prepare React environment variables based on the values we used on previous steps. On the top project folder, create <code>.env</code> file and add the following parameters:</p>
-<p><code>REACT_APP_API_NAME=groceryTrackingAPI
+<div class="highlight"><pre><span></span><code>REACT_APP_API_NAME=groceryTrackingAPI
 REACT_APP_API_PATH=/grocery
-REACT_APP_API_PATH_REPORT=/report</code></p>
+REACT_APP_API_PATH_REPORT=/report
+</code></pre></div>
 </li>
 <li>
 <p>Now we can copy all the source codes (Python for Lambda function and all React apps) from the zip files provided earlier:</p>
@@ -501,8 +660,7 @@ REACT_APP_API_PATH_REPORT=/report</code></p>
 </li>
 <li>
 <p>Our sample React App requires some Node modules, go to top project directory and install the required modules using the following command:</p>
-<pre><code>```
-$ yarn add @aws-amplify/ui-react \
+<div class="highlight"><pre><span></span><code>$ yarn add @aws-amplify/ui-react \
     query-string \
     aws-amplify \
     react-bootstrap \
@@ -511,29 +669,31 @@ $ yarn add @aws-amplify/ui-react \
     react-router-dom \
     styled-components \
     uuid;
-```
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Next we to add Python package dependencies for both Lambda function. We will use <code>pipenv</code> command to install and list the required packages:</p>
 <ul>
 <li>
 <p>First Lambda function (i.e. <code>groceryTrackingLambda</code>) requires <code>boto3</code> to interact with other AWS resources (such as DynamoDB), and also <code>datetime</code> package to manage the timestamp. Go to 1st Lambda function folder under <code>&lt;PROJECT_FOLDER&gt;/amplify/backend/function/&lt;FUNCTION_1&gt;</code> and run the following command:</p>
-<p><code>$ pipenv install boto3 datetime</code></p>
+<div class="highlight"><pre><span></span><code>$ pipenv install boto3 datetime 
+</code></pre></div>
 <p>The <code>pipenv</code> command will install the required packages in isolated Python environment &amp; write the packages name into the <code>Pipfile</code> file. In the same directory (<code>&lt;PROJECT_FOLDER&gt;/amplify/backend/function/&lt;FUNCTION_1&gt;</code>), check the <code>Pipfile</code> &amp; verify it already contains both packages like the example below:</p>
-<p>```
-$ cat Pipfile
+<div class="highlight"><pre><span></span><code>$ cat Pipfile
 [[source]]
-name = "pypi"
-url = "https://pypi.org/simple"
-verify_ssl = true</p>
-<p>[dev-packages]</p>
-<p>[packages]
-boto3 = "<em>"
-datetime = "</em>"</p>
-<p>[requires]
-python_version = "3.8"      <br />
-```</p>
+name = &quot;pypi&quot;
+url = &quot;https://pypi.org/simple&quot;
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+boto3 = &quot;*&quot;
+datetime = &quot;*&quot;
+
+[requires]
+python_version = &quot;3.8&quot;        
+</code></pre></div>
 </li>
 <li>
 <p>Second Lambda function (i.e. <code>groceryTrackingReportLambda</code>) requires few Python packages:</p>
@@ -544,107 +704,80 @@ python_version = "3.8"      <br />
 <li><code>xlsxwriter</code>: to produce Excel report file.</li>
 </ol>
 <p>Go to 2nd Lambda function folder under <code>&lt;PROJECT_FOLDER&gt;/amplify/backend/function/&lt;FUNCTION_2&gt;</code> and and run the following command:</p>
-<p><code>$ pipenv install boto3 datetime numpy pandas xlsxwriter</code></p>
+<div class="highlight"><pre><span></span><code>$ pipenv install boto3 datetime numpy pandas xlsxwriter
+</code></pre></div>
 <p>Same as previous step, check the <code>Pipfile</code> file &amp; verify it already contains all packages like the example below:</p>
-<p>```
-$ cat Pipfile
+<div class="highlight"><pre><span></span><code>$ cat Pipfile
 [[source]]
-name = "pypi"
-url = "https://pypi.org/simple"
-verify_ssl = true</p>
-<p>[dev-packages]</p>
-<p>[packages]
-numpy = "<em>"
-pandas = "</em>"
-xlsxwriter = "<em>"
-boto3 = "</em>"
-datetime = "*"</p>
-<p>[requires]
-python_version = "3.8"      <br />
-```
-15. Up until this point all configuration of backend components still not pushed to the cloud. You should see similar output below:</p>
+name = &quot;pypi&quot;
+url = &quot;https://pypi.org/simple&quot;
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+numpy = &quot;*&quot;
+pandas = &quot;*&quot;
+xlsxwriter = &quot;*&quot;
+boto3 = &quot;*&quot;
+datetime = &quot;*&quot;
+
+[requires]
+python_version = &quot;3.8&quot;        
+</code></pre></div>
 </li>
 </ul>
-<p>```
-$ amplify status</p>
-<p>Current Environment: dev</p>
-<table>
-<thead>
-<tr>
-<th>Category</th>
-<th>Resource name</th>
-<th>Operation</th>
-<th>Provider plugin</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Auth</td>
-<td>leapdemo8ff38349</td>
-<td>Create</td>
-<td>awscloudformation</td>
-</tr>
-<tr>
-<td>Storage</td>
-<td>groceryBucket</td>
-<td>Create</td>
-<td>awscloudformation</td>
-</tr>
-<tr>
-<td>Storage</td>
-<td>groceryTable</td>
-<td>Create</td>
-<td>awscloudformation</td>
-</tr>
-<tr>
-<td>Function</td>
-<td>groceryTrackingLambda</td>
-<td>Create</td>
-<td>awscloudformation</td>
-</tr>
-<tr>
-<td>Function</td>
-<td>grocertyTrackingReportLambda</td>
-<td>Create</td>
-<td>awscloudformation</td>
-</tr>
-<tr>
-<td>Api</td>
-<td>groceryTrackingAPI</td>
-<td>Create</td>
-<td>awscloudformation</td>
-</tr>
-</tbody>
-</table>
-<p>$ 
-```</p>
+</li>
+<li>
+<p>Up until this point all configuration of backend components still not pushed to the cloud. You should see similar output below:</p>
+<div class="highlight"><pre><span></span><code>$ amplify status
+
+Current Environment: dev
+
+| Category | Resource name                | Operation | Provider plugin   |
+| -------- | ---------------------------- | --------- | ----------------- |
+| Auth     | leapdemo8ff38349             | Create    | awscloudformation |
+| Storage  | groceryBucket                | Create    | awscloudformation |
+| Storage  | groceryTable                 | Create    | awscloudformation |
+| Function | groceryTrackingLambda        | Create    | awscloudformation |
+| Function | grocertyTrackingReportLambda | Create    | awscloudformation |
+| Api      | groceryTrackingAPI           | Create    | awscloudformation |
+
+$ 
+</code></pre></div>
 </li>
 <li>
 <p>Now we can push the configuration, Amplify will start provision all of the backend resources using bunch of CloudFormation scripts.</p>
-<p><code>$ amplify push -y</code>
+<p><div class="highlight"><pre><span></span><code>$ amplify push -y
+</code></pre></div>
 This process will take some time to complete (15-25minutes). In the end if all resources has been provisioned successfully, you should see the output like this:</p>
-<p>```
-✔ All resources are updated in the cloud</p>
-<p>REST API endpoint: https://br1670h4e4.execute-api.ap-southeast-1.amazonaws.com/dev</p>
-<p>$ 
-```</p>
+<div class="highlight"><pre><span></span><code>✔ All resources are updated in the cloud
+
+REST API endpoint: https://br1670h4e4.execute-api.ap-southeast-1.amazonaws.com/dev
+
+$ 
+</code></pre></div>
 <p>We can double check the status using <code>amplify status</code> command.</p>
 </li>
 <li>
 <p>Now we can continue build and publish the frontend component (i.e. publish React app). Amplify provides 2 method to host our React app:</p>
-<p>a. Hosting with Amplify Console
-b. CloudFront &amp; S3</p>
+<ol>
+<li>Hosting with Amplify Console</li>
+<li>CloudFront &amp; S3</li>
+</ol>
 <p>In this workshop we will use CloudFront and S3. To configure the hosting, run the following command:</p>
-<p>```
-$ amplify add hosting
+<div class="highlight"><pre><span></span><code>$ amplify add hosting
 ? Select the plugin module to execute   # Select Amazon CloudFront and S3
 ? Select the environment setup:     # Select PROD (S3 with CloudFront using HTTPS)
-? hosting bucket name     # leave default value for bucket name</p>
-<p>Static webhosting is disabled for the hosting bucket when CloudFront Distribution is enabled.</p>
-<p>You can now publish your app using the following command:
-Command: amplify publish</p>
-<p>$
-```</p>
+? hosting bucket name     # leave default value for bucket name
+
+Static webhosting is disabled for the hosting bucket when CloudFront Distribution is enabled.
+
+You can now publish your app using the following command:
+Command: amplify publish
+
+$
+</code></pre></div>
 </li>
 <li>
 <p>Execute <code>amplify publish</code> to continue setup S3 &amp; CloudFront. What happen next is Amplify will do the following:</p>
@@ -656,13 +789,13 @@ Command: amplify publish</p>
 <li>Amplify will build React source code (execute <code>react-scripts build</code> described in <code>package.json</code> file) and upload the artifact to the S3 bucket.</li>
 </ul>
 <p>At the end of the process, you will see the notification like the sample below:</p>
-<p><code>Your app is published successfully.
-https://d3ljobzzmaed3j.cloudfront.net</code></p>
+<div class="highlight"><pre><span></span><code>Your app is published successfully.
+https://d3ljobzzmaed3j.cloudfront.net
+</code></pre></div>
 </li>
 <li>
 <p>Once caveat if we use region other than <code>us-east-1</code> is CloudFront falsely redirect the request to S3 bucket like the following example.</p>
-<p>```
-$ curl -I https://d3ljobzzmaed3j.cloudfront.net
+<div class="highlight"><pre><span></span><code>$ curl -I https://d3ljobzzmaed3j.cloudfront.net
 HTTP/2 307
 content-type: application/xml
 location: https://leapdemo-20210115111810-hostingbucket-dev.s3-ap-southeast-1.amazonaws.com/index.html
@@ -672,9 +805,10 @@ server: AmazonS3
 x-cache: Miss from cloudfront
 via: 1.1 f28347a3148f4f8fa1d930375689073d.cloudfront.net (CloudFront)
 x-amz-cf-pop: SIN5-C1
-x-amz-cf-id: 6UNRO-nJlIQcIMp1xz0b_Kv-dVQb9Mn3yvRepLlk1IMqx7HHJfjoZA==</p>
-<p>$
-```</p>
+x-amz-cf-id: 6UNRO-nJlIQcIMp1xz0b_Kv-dVQb9Mn3yvRepLlk1IMqx7HHJfjoZA==
+
+$
+</code></pre></div>
 <p>This behaviour occur because delay on DNS propagation of our our newly created S3 bucket. It will not be an issue if we configure our Amplify in <code>us-east-1</code>. You can wait until the propagation completed or as the workaround we can modify CloudFront origin to point to regional name of S3 bucket as shown below:</p>
 <ul>
 <li>Before: <hosting_bucket_name>.s3.amazonaws.com</li>
@@ -693,10 +827,10 @@ x-amz-cf-id: 6UNRO-nJlIQcIMp1xz0b_Kv-dVQb9Mn3yvRepLlk1IMqx7HHJfjoZA==</p>
 </ol>
 <h2 id="known-issue">Known Issue</h2>
 <p>We acknowledge the issue with Excel report generation if you are using Python 3.8.5. When we push the environment, Amplify only compiled 3 packages (<code>boto3</code>, <code>datetime</code>, and <code>xlsxwriter</code>). That makes Lambda report function generate the following error:</p>
-<pre><code>[ERROR] Runtime.ImportModuleError: Unable to import module 'index': No module named 'pandas'
-</code></pre>
+<div class="highlight"><pre><span></span><code>[ERROR] Runtime.ImportModuleError: Unable to import module &#39;index&#39;: No module named &#39;pandas&#39;
+</code></pre></div>
 <p>Upon checking we found that with Python 3.8.5 there is different location of packages, both <code>numpy</code> &amp; <code>pandas</code> now stored inside <code>lib64</code></p>
-<pre><code>:~/.local/share/virtualenvs/groceryTrackingReportLambda-W_sVNa5j $ ll lib64/python3.8/site-packages/
+<div class="highlight"><pre><span></span><code>:~/.local/share/virtualenvs/groceryTrackingReportLambda-W_sVNa5j $ ll lib64/python3.8/site-packages/
 total 8
 drwxrwxr-x 17 ec2-user ec2-user 4096 Jan 15 10:56 numpy
 drwxrwxr-x  2 ec2-user ec2-user  175 Jan 15 10:56 numpy-1.19.5.dist-info
@@ -707,9 +841,9 @@ drwxrwxr-x  3 ec2-user ec2-user   23 Jan 15 10:56 zope
 -rw-rw-r--  1 ec2-user ec2-user  529 Jan 15 10:56 zope.interface-5.2.0-py3.8-nspkg.pth
 drwxrwxr-x  2 ec2-user ec2-user  136 Jan 15 10:56 zope.interface-5.2.0.dist-info
 :~/.local/share/virtualenvs/groceryTrackingReportLambda-W_sVNa5j $
-</code></pre>
+</code></pre></div>
 <p>While the other 3 packages are stored in <code>lib</code> folder:</p>
-<pre><code>:~/.local/share/virtualenvs/groceryTrackingReportLambda-W_sVNa5j $ ll lib/python3.8/site-packages/
+<div class="highlight"><pre><span></span><code>:~/.local/share/virtualenvs/groceryTrackingReportLambda-W_sVNa5j $ ll lib/python3.8/site-packages/
 total 76
 drwxrwxr-x  4 ec2-user ec2-user   156 Jan 15 10:56 DateTime
 drwxrwxr-x  2 ec2-user ec2-user   148 Jan 15 10:56 DateTime-4.3.dist-info
@@ -756,121 +890,57 @@ drwxrwxr-x  3 ec2-user ec2-user    23 Jan 15 13:40 zope
 -rw-rw-r--  1 ec2-user ec2-user   529 Jan 15 13:40 zope.interface-5.2.0-py3.8-nspkg.pth
 drwxrwxr-x  2 ec2-user ec2-user   136 Jan 15 13:40 zope.interface-5.2.0.dist-info
 :~/.local/share/virtualenvs/groceryTrackingReportLambda-W_sVNa5j $
-</code></pre>
+</code></pre></div>
 <p>This is different behavior with Python 3.8.1 on which all packages stored in the same <code>lib</code> directory.</p>
 <p>As the workaround, we can manually copied both <code>numpy</code> &amp; <code>pandas</code> from <code>lib64</code> to <code>lib</code> folder. Steps are:</p>
-<pre><code>$ cp -r ~/.local/share/virtualenvs/groceryTrackingReportLambda*/lib64/python3.8/site-packages/numpy*  ~/.local/share/virtualenvs/groceryTrackingReportLambda*/lib/python3.8/site-packages/
+<div class="highlight"><pre><span></span><code>$ cp -r ~/.local/share/virtualenvs/groceryTrackingReportLambda*/lib64/python3.8/site-packages/numpy*  ~/.local/share/virtualenvs/groceryTrackingReportLambda*/lib/python3.8/site-packages/
 $ cp -r ~/.local/share/virtualenvs/groceryTrackingReportLambda*/lib64/python3.8/site-packages/pandas*  ~/.local/share/virtualenvs/groceryTrackingReportLambda*/lib/python3.8/site-packages/
 $ cd &lt;PROJECT_FOLDER&gt;/amplify/backend/function/&lt;FUNCTION_2&gt;
-$ touch dummy.txt  ## this is to trick Amplify that there is actual function changes, otherwise it won't let us to run amplify push again.
+$ touch dummy.txt  ## this is to trick Amplify that there is actual function changes, otherwise it won&#39;t let us to run amplify push again.
 $ amplify push -y
-</code></pre>
-<h2 id="_1"><!--React JS Intro--></h2>
-<ul>
-<li><!--Basic concept of Components--></li>
-<li><!--JSX--></li>
-<li><!--Axios--></li>
-<li><!--styled-components & react-bootstrap--></li>
-<li><!--useState, useEffect--></li>
-</ul>
-<h2 id="_2"><!--DynamoDB Design Intro--></h2>
-<ul>
-<li><!--PK & SK design--></li>
-<li><!--Application / UI should be part of database schema design--></li>
-</ul>
-<h2 id="_3"><!--Amplify Intro--></h2>
-<ul>
-<li><!--Setup--></li>
-<li><!--Backend function & API--></li>
-<li><!--Storage & Database--></li>
-<li><!--Deployment & CI/CD--></li>
-<li><!--Amplify-reactjs--></li>
-</ul>
-<h2 id="_4"><!--A lot of aspects that still not covered--></h2>
-<ul>
-<li><!--Unit testing--></li>
-<li><!--Custom Authentication workflow--></li>
-<li><!--Custom build image & build spec--> </li>
-</ul></div>
-            </div>
-        </div>
+</code></pre></div>
+                
+              
+              
+                
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = ".",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
+              
+            </article>
+          </div>
         </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+  </div>
+</footer>
+      
     </div>
-</div>
-
-    </body>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": ["toc.integrate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.e99e714c.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.c7d1b464.min.js"></script>
+      
+    
+  </body>
 </html>
-
-<!--
-MkDocs version : 1.2.2
-Build Date UTC : 2021-10-10 02:37:14.064272+00:00
--->
