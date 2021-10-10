@@ -1,0 +1,14 @@
+site_name: 'Amplify Demo Workshop'
+nav:
+  - Home: index.md
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+# theme: readthedocs
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: black
+  features:
+    - toc.integrate
