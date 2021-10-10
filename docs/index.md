@@ -673,4 +673,6 @@ $ touch dummy.txt  ## this is to trick Amplify that there is actual function cha
 $ amplify push -y
 ```
 
+After that you can retest the application.
+
 
