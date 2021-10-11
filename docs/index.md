@@ -676,3 +676,4 @@ $ amplify push -y
 After that you can retest the application.
 
 
+[Setup](setup.md)
